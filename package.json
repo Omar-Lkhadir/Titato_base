@@ -11,10 +11,7 @@
     "develop": "gatsby develop",
     "start": "gatsby develop",
     "start": "gatsby build && gatsby serve -p $PORT",
-    "builds": [
-    { "src": "package.json", "use": "@vercel/node" },
-    { "src": "gatsby-config.js", "use": "@vercel/gatsby" }
-    ]
+    "build": "gatsby build",
     "serve": "gatsby serve",
     "clean": "gatsby clean"
   },
