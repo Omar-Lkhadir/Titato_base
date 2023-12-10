@@ -108,10 +108,11 @@ const SignupPage = () => {
       {successMessage && <p className="text-green-500">{successMessage}</p>}
         {errorMessage && <p className="text-red-500">{errorMessage}</p>}
 
-      <button className="bg-transparent text-white font-bold py-2 px-4 hover:shadow-sm hover:translate-y-1 font-['Qatar2022'] rounded-full w-96 border-2">
-      Sign Up
-    </button>
+      
     </form>
+    <a href='/home' ><button className="bg-transparent text-white font-bold py-2 px-4 hover:shadow-sm hover:translate-y-1 font-['Qatar2022'] rounded-full w-96 border-2">
+     Sign Up 
+    </button></a>    
     
     <div className="flex flex-col justify-center items-center">
       <p className=" text-white font-['Qatar2022'] text-lg">Or, Sign in with <a href="/" className="font-semibold">Google</a> or <a href="/" class="font-semibold">Facebook</a>   </p></div>
