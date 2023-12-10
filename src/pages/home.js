@@ -5,7 +5,7 @@ import { StaticImage } from "gatsby-plugin-image"
 
 const HomePage = () => {
   const [showEmail, setShowEmail] = React.useState(false);
-  const userEmail = localStorage.getItem('userEmail');
+  const userEmail = typeof window !== 'undefined' ? localStorage.getItem('userEmail') : null;
 
   const handleCircleClick = () => {
     setShowEmail(!showEmail);
